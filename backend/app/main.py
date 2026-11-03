@@ -549,6 +549,16 @@ async def get_scenario_replay(scenario: str):
     return {"scenario": scenario, "total_events": len(events), "events": events}
 
 
+# ---------------------------------------------------------------------------
+# Serve Production Frontend Static Files (if built)
+# ---------------------------------------------------------------------------
+from fastapi.staticfiles import StaticFiles
+
+frontend_dist = config.BASE_DIR / "frontend" / "dist"
+if frontend_dist.exists():
+    app.mount("/", StaticFiles(directory=str(frontend_dist), html=True), name="frontend")
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8000)
