@@ -1,0 +1,3 @@
+round,accuracy,loss,precision,recall,f1,trusted_clients,excluded_clients,blockchain_ms
+1,0.8779,0.5416,0.8842,0.9614,0.9212,8,0,35.51
+2,0.8511,0.2822,0.9844,0.8123,0.8901,8,0,15.84

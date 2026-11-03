@@ -1,0 +1,13 @@
+venv/
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+experiments/production/
+*.pth
+*.npz
+ganache-db/

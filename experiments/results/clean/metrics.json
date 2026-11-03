@@ -1,0 +1,79 @@
+{
+  "scenario": "clean",
+  "config": {
+    "scenario": "clean",
+    "num_clients": 8,
+    "malicious_ids": [],
+    "detection": false,
+    "attack_type": "label_flip",
+    "rounds": 10,
+    "local_epochs": 1,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "speed_ms": 0,
+    "seed": 42,
+    "partition_seed": 445
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "accuracy": 0.8779,
+      "loss": 0.5416,
+      "precision": 0.8842,
+      "recall": 0.9614,
+      "f1": 0.9212,
+      "trusted_clients": 8,
+      "excluded_clients": 0,
+      "blockchain_ms": 35.51
+    },
+    {
+      "round": 2,
+      "accuracy": 0.8511,
+      "loss": 0.2822,
+      "precision": 0.9844,
+      "recall": 0.8123,
+      "f1": 0.8901,
+      "trusted_clients": 8,
+      "excluded_clients": 0,
+      "blockchain_ms": 15.84
+    }
+  ],
+  "elapsed_seconds": 40.45,
+  "final_metrics": {
+    "round": 2,
+    "accuracy": 0.8511,
+    "loss": 0.2822,
+    "precision": 0.9844,
+    "recall": 0.8123,
+    "f1": 0.8901,
+    "trusted_clients": 8,
+    "excluded_clients": 0,
+    "blockchain_ms": 15.84
+  },
+  "final_test_metrics": {
+    "loss": 0.3598,
+    "accuracy": 0.8397,
+    "balanced_accuracy": 0.8487,
+    "precision": 0.9215,
+    "recall": 0.8128,
+    "specificity": 0.8846,
+    "auc": 0.924,
+    "f1": 0.8638,
+    "confusion_matrix": [
+      [
+        207,
+        27
+      ],
+      [
+        73,
+        317
+      ]
+    ]
+  },
+  "detection_report": {
+    "actual_attackers": [],
+    "caught_attackers": {},
+    "honest_wrongly_flagged_or_excluded": [],
+    "honest_wrongly_flagged_count": 0
+  }
+}
