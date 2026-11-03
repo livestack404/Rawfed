@@ -9,5 +9,6 @@ build/
 .pytest_cache/
 experiments/production/
 *.pth
+!models/*.pth
 *.npz
 ganache-db/
